@@ -456,11 +456,12 @@ iframe {
 .languages .item {
   margin-bottom: 15px;
 }
-.languages .item .title {
+.languages .title {
   color: #778492;
 }
-.languages .item .level {
-  color: #999999;
+.languages .level {
+  color: #b0b7bf;
+  font-weight: 500;
 }
 .languages .item:last-child {
   margin-bottom: 0;
@@ -513,6 +514,11 @@ iframe {
 }
 .credits .btn {
   margin-bottom: 15px;
+}
+/* Imprint */
+.imprint .fa {
+  margin-right: 15px;
+  color: #ccd1d6;
 }
 /* ======= Footer ======= */
 .footer {
