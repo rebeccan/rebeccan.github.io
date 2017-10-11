@@ -657,38 +657,9 @@ todo rn:
   </footer>
 
   <!-- Javascript -->
-  <script type="text/javascript" src="assets/plugins/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-
-  <script type="text/javascript" src="assets/plugins/bootstrap-lightbox.min.js"></script>
-
-  <script type="text/javascript" src="assets/js/main.js"></script>
-
   <script type="text/javascript" src="assets/plugins/moment-timezone/moment.js"></script>
   <script type="text/javascript" src="assets/plugins/moment-timezone/moment-timezone-with-data-2012-2022.js"></script>
-
-  <script type="text/javascript">
-
-    function displayTime() {
-
-      const userTime = document.getElementById('usertime');
-      const rebeccasTime = document.getElementById('rebeccastime');
-
-      const nowUser = moment().format("DD/MM/YYYY HH:mm:ss ZZ");
-      const nowRebecca = moment().tz("Pacific/Auckland").format("DD/MM/YYYY HH:mm:ss ZZ");
-
-      userTime.innerHTML = nowUser;
-      rebeccasTime.innerHTML = nowRebecca;
-
-    }
-
-    displayTime();
-
-    setInterval(displayTime, 1000);
-
-  </script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 

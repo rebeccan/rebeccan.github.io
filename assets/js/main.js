@@ -1,28 +1,30 @@
-jQuery(document).ready(function($) {
+function onload() {
+  //display time zones and update every second
+  displayTime();
+  setInterval(displayTime, 1000);
+
+  //set level bars according to skills
+  setTimeout(setLevels, 0);
+}
+
+function displayTime() {
+  const userTime = document.getElementById('usertime');
+  const rebeccasTime = document.getElementById('rebeccastime');
+
+  const nowUser = moment().format("DD/MM/YYYY HH:mm:ss ZZ");
+  const nowRebecca = moment().tz("Pacific/Auckland").format("DD/MM/YYYY HH:mm:ss ZZ");
+
+  userTime.innerHTML = nowUser;
+  rebeccasTime.innerHTML = nowRebecca;
+}
+
+function setLevels() {
+  const allLevelBars = document.querySelectorAll('.level-bar-inner');
+  allLevelBars.forEach(function(levelBar) {
+    levelBar.style.width = levelBar.dataset.level;
+  });
+}
 
 
-    /*======= Skillset *=======*/
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    $(window).on('load', function() {
 
-        $('.level-bar-inner').each(function() {
-        
-            var itemWidth = $(this).data('level');
-            
-            $(this).animate({
-                width: itemWidth
-            }, 800);
-            
-        });
-
-    });
-    
-    /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
- 
-
-
-
-});
+document.addEventListener("DOMContentLoaded", onload);

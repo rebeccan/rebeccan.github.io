@@ -382,7 +382,9 @@ iframe {
 }
 .skills .skillset .level-bar-inner {
   height: 15px;
+  width: 0%;
   background: #5235af;
+  transition: width 2s;
 }
 /* Testimonials section */
 .testimonials .item {
