@@ -520,7 +520,7 @@ iframe {
 }
 /* Imprint */
 .imprint .fa {
-  margin-right: 15px;
+  width: 40px;
   color: #ccd1d6;
 }
 /* ======= Footer ======= */
@@ -884,7 +884,7 @@ figure.effect-sadie:hover p {
   color: orangered;
   font-size: 14px;
   background: #000000;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 3px 3px 6px #888;
   width: 180px;
   height: 35px;
   padding: 7px 0px 0px 10px;
