@@ -457,20 +457,20 @@ iframe {
 
 /* Language Section */
 .languages .item {
-  margin-bottom: 15px;
+  line-height: 25px;
 }
 .languages .title {
   color: #778492;
+  font-weight: bold;
+  width: 70px;
+  display: inline-block;
 }
 .languages .level {
   color: #b0b7bf;
   font-weight: 500;
 }
-.languages .item:last-child {
-  margin-bottom: 0;
-}
 .languages .item .fa {
-  color: #79d19a;
+  width: 30px;
 }
 /* Blog Section */
 .blog .item {
@@ -814,26 +814,24 @@ figure.effect-sadie:hover p {
 
 }
 
-.language li {
-  list-style: none;
-}
-
-.language .dropdown-menu {
-    min-width: 0px;
-}
-
-.language .dropdown-toggle {
-    color: #777;
-}
 
 /*calendar and time*/
-.date {
-  display: block;
+.dateWrapper {
+  margin-top: 30px;
+}
+
+.dateRow {
+  margin: 8px 0;
+}
+
+.dateRow i.fa {
+  width: 30px;
+  color: #ccd1d6;
 }
 
 .dateicon {
-  float: left;
-  width: 20%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .dateicon time {
@@ -879,8 +877,10 @@ figure.effect-sadie:hover p {
 }
 
 .clock {
-  float: left;
-  font-family: 'digitalclock', arial, sans-serif, monospace;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-family: 'digitalclock', monospace;
   color: orangered;
   font-size: 14px;
   background: #000000;
