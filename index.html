@@ -73,10 +73,36 @@ todo rn:
                 <div class="content">
                   <ul class="list-unstyled">
                     <li><i class="fa fa-map-marker"></i><span class="sr-only"></span>currently living in Auckland &nbsp; <i class="fa fa-smile-o" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-clock-o"></i><span class="sr-only"></span>Your current time: </li>
-                    <div id="usertime" class="time"></div>
-                    <li><i class="fa fa-clock-o"></i><span class="sr-only"></span>Rebeccas current time: </li>
-                    <div id="rebeccastime" class="time"></div>
+
+                    <div class="date">
+                      <li><i class="fa fa-clock-o"></i><span class="sr-only"></span><span id="titleClock">Your current time </span></li>
+                      <div class="dateicon">
+                        <time datetime="2014-09-20">
+                          <strong id="userdate-month"></strong>
+                          <span id="userdate-day"></span>
+                        </time>
+                      </div>
+                      <div class="clock">
+                        <time datetime="14:54:28+1300">
+                          <strong id="userdate-time"></strong>
+                        </time>
+                      </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div id="rebeccasTime" class="time">
+                      <li><i class="fa fa-clock-o"></i><span class="sr-only"></span>Rebecca's current time </li>
+                      <div class="dateicon">
+                        <time datetime="2014-09-20">
+                          <strong id="rebeccadate-month"></strong>
+                          <span id="rebeccadate-day"></span>
+                        </time>
+                      </div>
+                      <div class="clock">
+                        <time datetime="14:54:28+1300">
+                          <strong id="rebeccadate-time"></strong>
+                        </time>
+                      </div>
+                    </div>
                   </ul>
                 </div>
               </div>

@@ -350,6 +350,7 @@ iframe {
 }
 .info li {
   margin-top: 15px;
+  margin-bottom: 5px;
 }
 .info li:last-child {
   margin-bottom: 0;
@@ -823,4 +824,70 @@ figure.effect-sadie:hover p {
 
 .language .dropdown-toggle {
     color: #777;
+}
+
+/*calendar and time*/
+.date {
+  display: block;
+}
+
+.dateicon {
+  float: left;
+  width: 20%;
+}
+
+.dateicon time {
+  font-size: 0.7em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 4em;
+  height: 4em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+}
+
+.dateicon time * {
+  display: block;
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+.dateicon time strong {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background-color: #5235af;
+  border-bottom: 1px dashed #aaaaaa;
+  box-shadow: 0 2px 0 #5235af;
+}
+
+.dateicon time span {
+  font-size: 1.7em;
+  letter-spacing: -0.05em;
+  padding-top: 0.8em;
+  color: #2f2f2f;
+}
+
+@font-face {
+    font-family: digitalclock;
+    src: url("../fonts/digital_dream_fat_regular/DigitaldreamFat.ttf");
+}
+
+.clock {
+  float: left;
+  font-family: 'digitalclock', arial, sans-serif, monospace;
+  color: orangered;
+  font-size: 14px;
+  background: #000000;
+  box-shadow: 10px 10px 5px #888888;
+  width: 180px;
+  height: 35px;
+  padding: 7px 0px 0px 10px;
+  margin-top: 3px;
+  border-radius: 0.6em;
 }
