@@ -904,3 +904,17 @@ span.phonenumber {
   direction: rtl;
   unicode-bidi: bidi-override;
 }
+
+a.email.withtext:before {
+  content: "moc.liamg@";
+}
+
+a.email.withtext:after {
+  content: "acceber";
+}
+
+a.email.withtext {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
