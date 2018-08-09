@@ -27,7 +27,7 @@ function displayTimes() {
   // const nowRebecca = moment().tz("Europe/Berlin");
 
   //only display two times if the user has a different time zone than rebecca
-  if(nowUser.utcOffset() === nowRebecca.utcOffset()) {
+  if (nowUser.utcOffset() === nowRebecca.utcOffset()) {
     document.getElementById('titleClock').innerHTML = "You live in the same timezone as Rebecca";
     setMonthDayTime('user', nowUser);
     document.getElementById('rebeccasTime').innerHTML = "";
@@ -43,7 +43,7 @@ Fill the level bars according to skill percentage
 */
 function setLevels() {
   const allLevelBars = document.querySelectorAll('.level-bar-inner');
-  allLevelBars.forEach(function(levelBar) {
+  allLevelBars.forEach(function (levelBar) {
     levelBar.style.width = levelBar.dataset.level;
   });
 }
