@@ -23,7 +23,7 @@ function setMonthDayTime(prefix, now) {
 
 function displayTimes() {
   const nowUser = moment();
-  const nowRebecca = moment().tz("Pacific/Auckland");
+  const nowRebecca = moment().tz("Europe/Berlin");
   // const nowRebecca = moment().tz("Europe/Berlin");
 
   //only display two times if the user has a different time zone than rebecca
