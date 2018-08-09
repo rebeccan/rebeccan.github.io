@@ -891,3 +891,16 @@ figure.effect-sadie:hover p {
   margin-top: 3px;
   border-radius: 0.6em;
 }
+
+span.phonenumber:before {
+  content: " 6909 479 ";
+}
+
+span.phonenumber:after {
+  content: " 94+ ";
+}
+
+span.phonenumber {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
