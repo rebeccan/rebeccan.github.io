@@ -65,8 +65,8 @@ function initMail() {
 
 function mailAction() {
   // Inspired by Email obfuscator script 2.1 http://www.jottings.com/obfuscator/
-  const encrypted = "2fAfDDvqfrkf28@kpvrQ.DSp";
-  const secret = "WfjQT249zp51AgaPR38iqZuLHU7coMxKhsVJdkveFlNrBIYmw0bDSX6OtGnyCE";
+  const encrypted = "DTdTffc.bX.WcYXT@OPcbY.fxP";
+  const secret = "VtdzKYks2AuQipGn7rm8fCJEN4heqga1XZ3o5HbLBlwDP9WyS6vMjTFOcR0IUx";
   let mail = "";
   for (i = 0; i < encrypted.length; i++) {
     if (secret.indexOf(encrypted.charAt(i)) == -1) {
